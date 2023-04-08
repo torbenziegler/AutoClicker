@@ -46,6 +46,7 @@ class AutoClicker:
         pyautogui.moveTo(self.saved_position)
 
     def start_autoclicker(self):
+        self.click_count = 0
         self.thread = threading.Thread(target=self._autoclicker_loop)
         self.thread.start()
 
@@ -72,3 +73,8 @@ class AutoClicker:
         with open("clicks.log", "a") as f:
             timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Timestamp: {timestamp}, Position: {self.position}\n")
+
+    def quit(self):
+        self.stop_autoclicker()
+        print("Quitting AutoClicker...")
+        exit(0)
