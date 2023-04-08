@@ -1,6 +1,6 @@
 # AutoClicker
 
-AutoClicker is a Python application that allows you to automate mouse clicks on a specific position on your screen. The application also features a GUI that allows you to adjust the clicking interval, save the current cursor position, and pause/resume the clicking process.
+AutoClicker is a Python application that allows you to automate mouse clicks on a specific position on your screen. The application also features a GUI that allows you to adjust the clicking interval, save the current cursor position, and pause/resume the clicking process. The auto-clicking is only performed if the cursor is set on the saved position.
 
 ## Requirements
 
